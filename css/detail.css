@@ -1,0 +1,73 @@
+*{padding:0;margin:0}
+a{text-decoration: none; outline:none}
+li{list-style:none}
+.clearfix:before,
+.clearfix:after {content: '\0020';display: block;overflow: hidden;visibility: hidden;width: 0;height: 0}
+.clearfix:after {clear: both}
+.clearfix {zoom: 1}
+:focus {outline:none}
+img {border:0 none; outline:none}
+a:hover {text-indent:0}
+
+body{font-size:12px; font-family:Arial, Helvetica, sans-serif; background-color: #EAEAEA;  repeat;}
+#wrapper {width:960px; margin:0 auto}
+.header{float: left; width: 100%; background-color: #ffffff; border-top: 10px solid #EAEAEA;}
+.header img {float: left;margin: 22px 0;padding-right: 15px;}
+
+.header h1, .header h2 a {font-size:50px; color:#ffb047; overflow:hidden; padding:30px 0 ;  font-weight:normal;  word-wrap:break-word}
+
+.searchHolder{padding:25px 0}
+.searchBox{margin:0 auto; width:403px; border:1px solid #c5c5c5; overflow:hidden; height:34px; background:#ffffff url(http://i3.cdn-image.com/__media__/pics/8624/searchIcon.gif) 9px 8px no-repeat; padding-left:30px}
+.srchBtn{width:97px;float:right; cursor:pointer; height:34px; font-weight: normal; font-size:16px; border:none; color:#fff;-webkit-appearance: none;outline:none; background:#919191}
+.srchTxt{height:20px; border:0 none; width:284px; padding:7px 5px; line-height:20px; float:left}
+.srchBtn, .srchTxt{-webkit-appearance:none; border-radius:0 none}
+#wrapper h4 {color: #EAEAEA;font-size: 18px; float: left;width: 100%;margin: 17px 0 0;}
+ul#ads {width:100%; list-style:none} 
+ul#ads li {clear: both; display: block; word-wrap: break-word; margin-bottom:12px}
+ul#ads .numWrap{float:left; text-align:center; height:64px; width:66px; position:relative; /*background:#78678a  url(http://i2.cdn-image.com/__media__/pics/9161/numArrowres.png) */ right top no-repeat; margin:8px 20px 20px 20px; padding:24px 0 0 10px}
+ul#ads .gol {background:#EAEAEA; width:40px; height:40px; border-radius:50%; color:#635b74; font-size:25px; line-height:40px; text-align:center} 
+
+ul#ads a {display:block; background:#ffffff}
+ul#ads a:hover {border-color:#999}
+.adWrap {padding:30px 10px 30px 78px}
+ul#ads .title {color:#ffb047; font-size:18px; line-height: 22px; word-wrap:break-word; font-weight: bold}
+ul#ads .desc {color: #868686; font-size: 14px; line-height: 20px; font-weight: normal; word-wrap:break-word}
+ul#ads .url {/* color: #fff; */ font-size: 14px; word-wrap:break-word; font-weight: bold; line-height:20px}
+ul#ads a:hover .url {color: #ffb047;}
+ul#ads a:hover  .title{color: #EAEAEA}
+
+.rs h3{font-size:16px; color:#fff; height:30px; line-height:29px; font-weight:normal}
+.rs p {color:#ffb047; font-size:18px; padding-top:10px}
+.rs a {color:#ffb047; text-decoration:underline; display:block; padding-bottom:15px}
+.rs a:hover {text-decoration:none}
+.srchBtn, .srchTxt{-webkit-appearance:none; border-radius:0}
+.adsTxt {text-align:right; color: #b0afaf; font-size:10px;padding-bottom: 5px}
+.customMsg {position:relative; background:#f4f4f4; color:#666; text-align: center; font: 11px/14px Arial, Helvetica, sans-serif; width:100%}
+.customMsg a {text-decoration: none; color:#000; font-size: 11px;}
+.customMsg a:hover {text-decoration: underline;}
+@media only screen and (max-width:1023px) {
+    body {-webkit-text-size-adjust: 100%; padding-top:0}
+    #wrapper {width: 93%; padding-left:2%}  
+    .adWrap {float:none; width:auto}
+    .srchBtn, .srchTxt{-webkit-appearance:none; border-radius:0 none}
+}
+@media only screen and (max-width:599px) {
+    ul#ads li {padding-top:0}
+    ul#ads a .title{margin: 0 0 2px 0}
+}
+@media only screen and (max-width:479px) {
+    ul#ads a {height:auto}
+    ul#ads .title{font-size:18px; line-height:22px}
+    .txt{width:65%}
+    .srchBtn{width:27%}
+    .srchTxt {width:65%} 
+    .searchBox{width:84%}
+}
+@media only screen and (max-width:280px) {
+    ul#ads .numWrap {display:none}
+    .adWrap {padding:10px}
+    #wrapper {padding-left:0}   
+    .srchBtn{width:100%; float:none; background:#919191; margin-top:5px}
+    .srchTxt {width:94%; padding:7px 3%; float:none; background:#ccc} 
+    .searchBox{width:96%; background:none; padding-left:0; height:auto; border:0 none}  
+}
